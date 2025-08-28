@@ -33,3 +33,25 @@ O export pode aparecer antes do function no começo:
 Pode também ser passado depois no final:
 
 > export default tal
+
+--
+
+### REACT ROUTER DOM
+
+> npm i react-router-dom
+
+botar <BrowserRouter></BrowserRouter> na main.jsx:
+
+import { StrictMode } from 'react'  
+import { createRoot } from 'react-dom/client'  
+import './index.css'  
+import App from './App.jsx'  
+import { BrowserRouter } from 'react-router-dom'  
+
+createRoot(document.getElementById('root')).render(  
+  <StrictMode>  
+    <BrowserRouter>  
+      <App />  
+    </BrowserRouter>  
+  </StrictMode>,  
+)  
